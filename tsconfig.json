@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "module": "NodeNext",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.js",
+    "./test/**/*.ts",
+    "./test/**/*.js"
+, "src/index.mjs"  ],
+  "exclude": ["node_modules", "./dist/**/*"],
+  "ts-node": {
+    "transpileOnly": true
+  }
+}

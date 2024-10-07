@@ -1,0 +1,21 @@
+id: replace-serve-script
+language: json
+rule:
+  pattern: 
+    context: '{"serve": "webpack serve"}'
+    selector: pair
+fix: | 
+    "serve": "rspack serve"
+
+---
+
+id: ccj
+language: json
+rule:
+  pattern: 
+    context: '{"build": "webpack build"}'
+    selector: pair
+fix: | 
+    "serve": "rspack build"
+
+  
